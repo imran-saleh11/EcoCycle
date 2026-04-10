@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'EcoCycle',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: RegisterScreen(),
+      home: HomePage(),
     );
   }
 }

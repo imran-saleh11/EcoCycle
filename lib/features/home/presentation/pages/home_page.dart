@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              "You've diverted 12.4kg of waste from\nlandfills this week. Explore your\ncontribution to the botanical circle.",
+              "You've diverted 0kg of waste from\nlandfills this week. Explore your\ncontribution to the botanical circle.",
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontSize: 15, height: 1.5),
             ),
 

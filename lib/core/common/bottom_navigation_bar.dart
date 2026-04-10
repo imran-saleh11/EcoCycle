@@ -1,5 +1,3 @@
-import 'package:ecocycle/features/dispute_resolution/presentation/pages/dispute_resolution_page.dart';
-import 'package:ecocycle/features/home/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import '../theme/app_theme.dart';
@@ -49,7 +47,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                 child: Icon(
                   LucideIcons.home,
                   color: _selectedIndex == 0
-                      ? AppColors.textMain
+                      ? AppColors.primaryGreen
                       : AppColors.textSecondary,
                   size: 30,
                 ),
@@ -73,7 +71,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                 child: Icon(
                   LucideIcons.scanLine,
                   color: _selectedIndex == 1
-                      ? AppColors.textMain
+                      ? AppColors.primaryGreen
                       : AppColors.textSecondary,
                   size: 32,
                 ),
@@ -97,7 +95,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                 child: Icon(
                   LucideIcons.barChart2,
                   color: _selectedIndex == 2
-                      ? AppColors.textMain
+                      ? AppColors.primaryGreen
                       : AppColors.textSecondary,
                   size: 30,
                 ),
@@ -121,7 +119,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                 child: Icon(
                   LucideIcons.user,
                   color: _selectedIndex == 3
-                      ? AppColors.textMain
+                      ? AppColors.primaryGreen
                       : AppColors.textSecondary,
                   size: 30,
                 ),
