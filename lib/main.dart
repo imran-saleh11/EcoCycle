@@ -1,4 +1,4 @@
-import 'package:ecocycle/features/home/presentation/pages/home_page.dart';
+import 'package:ecocycle/features/profile/presentation/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'EcoCycle',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: HomePage(),
+      home: ProfilePage(),
     );
   }
 }

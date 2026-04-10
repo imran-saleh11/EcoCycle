@@ -9,7 +9,7 @@ class AppColors {
   static const Color subtleGreen = Color(0xFF0A2B1D);
   static const Color textMain = Colors.white;
   static const Color textSecondary = Color(0xFFA0A0A0);
-  static const Color redError = Color(0xFFE53935);
+  static const Color redError = Color.fromRGBO(201, 79, 79, 1);
   static const Color border = Color(0xFF2C2C2C);
 }
 

@@ -1,7 +1,7 @@
+import 'package:ecocycle/core/common/appbar.dart';
 import 'package:ecocycle/features/home/presentation/components/achievement_card.dart';
 import 'package:ecocycle/features/home/presentation/components/eco_points_card.dart';
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import 'package:ecocycle/core/theme/app_theme.dart';
 
 class HomePage extends StatelessWidget {
@@ -11,38 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.background,
-      appBar: AppBar(
-        backgroundColor: AppColors.background,
-        elevation: 0,
-        title: Row(
-          children: [
-            const CircleAvatar(
-              radius: 20,
-              backgroundImage: NetworkImage('https://i.pravatar.cc/100?img=11'),
-            ),
-            const SizedBox(width: 12),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'welcome back,',
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(),
-                ),
-                Text(
-                  'John Doe',
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-          ],
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(LucideIcons.bell, color: AppColors.textSecondary),
-            onPressed: () {},
-          ),
-        ],
-      ),
+      appBar: CustomAppBar(userName: "John Doe"),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Column(
