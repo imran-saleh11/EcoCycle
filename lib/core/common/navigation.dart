@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ecocycle/features/home/presentation/pages/home_page.dart';
 import 'package:ecocycle/features/dispute_resolution/presentation/pages/dispute_resolution_page.dart';
 import 'package:ecocycle/features/profile/presentation/pages/profile_page.dart';
-import 'package:ecocycle/core/theme/app_theme.dart'; // Ensure this points to your theme file
+import 'package:ecocycle/core/theme/app_theme.dart';
 
 class MainNavigationContainer extends StatefulWidget {
   const MainNavigationContainer({super.key});

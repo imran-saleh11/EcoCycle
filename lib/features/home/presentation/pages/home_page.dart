@@ -1,5 +1,4 @@
 import 'package:ecocycle/core/common/appbar.dart';
-import 'package:ecocycle/core/common/bottom_navigation_bar.dart';
 import 'package:ecocycle/features/home/presentation/components/achievement_card.dart';
 import 'package:ecocycle/features/home/presentation/components/eco_points_card.dart';
 import 'package:flutter/material.dart';
@@ -62,7 +61,6 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 

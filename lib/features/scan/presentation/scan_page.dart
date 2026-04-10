@@ -19,7 +19,7 @@ class _ScanPageState extends State<ScanPage> {
   Future<void> _pickImage(ImageSource source) async {
     if (source == ImageSource.camera) {
       final status = await Permission.camera.request();
-      
+
       if (status.isDenied || status.isPermanentlyDenied) {
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
@@ -96,7 +96,7 @@ class _ScanPageState extends State<ScanPage> {
                         fit: BoxFit.cover,
                       )
                     : const DecorationImage(
-                        image: NetworkImage('https://images.unsplash.com/photo-1581404176161-5fc39396de34?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'), // Dark texture or generic macro photo
+                        image: NetworkImage('https://images.unsplash.com/photo-1581404176161-5fc39396de34?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'),
                         fit: BoxFit.cover,
                       ),
               ),
