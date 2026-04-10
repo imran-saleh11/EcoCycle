@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
 import '../theme/app_theme.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final String userName;
-  //final NetworkImage userProfile;
-
-  const CustomAppBar({
-    super.key,
-    required this.userName,
-    //required this.userProfile,
-  });
+  //TODO: fetch userName and userprofile from firebase
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +25,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(),
               ),
               Text(
-                userName,
+                'John Doe',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
               ),
             ],
@@ -41,7 +34,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       actions: [
         IconButton(
-          icon: const Icon(LucideIcons.bell, color: AppColors.textSecondary),
+          icon: Image.asset("assets/friends_icon.png", scale: 18, color: AppColors.textMain),
           onPressed: () {},
         ),
       ],
