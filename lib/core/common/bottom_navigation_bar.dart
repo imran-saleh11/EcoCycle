@@ -14,11 +14,6 @@ class CustomBottomNavigationBar extends StatefulWidget {
 class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   int _selectedIndex = 0;
 
-  final List<Widget> _screens = [
-    const HomePage(),
-    const DisputeResolutionPage(),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
