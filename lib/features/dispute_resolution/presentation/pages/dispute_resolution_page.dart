@@ -1,6 +1,7 @@
 import 'package:ecocycle/core/common/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:ecocycle/core/theme/app_theme.dart';
+import '../../../../core/common/bottom_navigation_bar.dart';
 
 // TODO: move to listview builder for the dispute cards
 class DisputeResolutionPage extends StatelessWidget {
@@ -103,6 +104,7 @@ class DisputeResolutionPage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 
