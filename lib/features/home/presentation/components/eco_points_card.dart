@@ -1,53 +1,93 @@
 import 'package:flutter/material.dart';
 import '../../../../core/theme/app_theme.dart';
+import 'package:lucide_icons/lucide_icons.dart';
 
 class EcoPointsCard extends StatelessWidget {
   const EcoPointsCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
-      decoration: BoxDecoration(
-        color: AppColors.cardBg,
-        borderRadius: BorderRadius.circular(24),
-      ),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset("assets/leaf_icon.png", scale: 12, color: AppColors.primaryGreen,),
-            const SizedBox(height: 12),
-            Text(
-              '1,240',
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
+    return Center(
+      child: Row(
+        children: [
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: AppColors.cardBg,
+                borderRadius: BorderRadius.circular(24),
+              ),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        "assets/leaf_icon.png",
+                        color: AppColors.primaryGreen,
+                        scale: 18,
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        '12,405',
+                        style: Theme.of(
+                          context,
+                        ).textTheme.headlineMedium?.copyWith(fontSize: 24),
+                      ),
+                      const SizedBox(height: 4),
+                      const Text(
+                        'Global Rank',
+                        style: TextStyle(
+                          color: AppColors.textSecondary,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
-            Text(
-              'ECO POINTS',
-              style: TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 10,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 1.5,
+          ),
+          const SizedBox(width: 16),
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: AppColors.cardBg,
+                borderRadius: BorderRadius.circular(24),
+              ),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(
+                        LucideIcons.badgeCheck,
+                        color: AppColors.primaryGreen,
+                        size: 24,
+                      ),
+                      const SizedBox(height: 16),
+                      Text(
+                        'SILVER',
+                        style: Theme.of(
+                          context,
+                        ).textTheme.headlineMedium?.copyWith(fontSize: 24),
+                      ),
+                      const SizedBox(height: 4),
+                      const Text(
+                        'Tier Status',
+                        style: TextStyle(
+                          color: AppColors.textSecondary,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.darkGreen,
-                foregroundColor: AppColors.primaryGreen,
-                elevation: 0,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
-              ),
-              child: const Text('Redeem', style: TextStyle(fontWeight: FontWeight.w600)),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

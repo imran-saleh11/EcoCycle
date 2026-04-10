@@ -1,4 +1,5 @@
 import 'package:ecocycle/core/common/appbar.dart';
+import 'package:ecocycle/core/common/bottom_navigation_bar.dart';
 import 'package:ecocycle/features/home/presentation/components/achievement_card.dart';
 import 'package:ecocycle/features/home/presentation/components/eco_points_card.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              "You've diverted 12.4kg of waste from\nlandfills this week. Explore your\ncontribution to the botanical circle.",
+              "You've diverted 0kg of waste from\nlandfills this week. Explore your\ncontribution to the botanical circle.",
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontSize: 15, height: 1.5),
             ),
 
@@ -61,11 +62,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: AppColors.primaryGreen,
-        child: const Icon(Icons.add, color: Colors.black, size: 30),
-      ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 
