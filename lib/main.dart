@@ -1,10 +1,6 @@
-import 'package:ecocycle/features/auth/presentation/pages/login_screen.dart';
-import 'package:ecocycle/features/auth/presentation/pages/register_screen.dart';
-import 'package:ecocycle/features/dispute_resolution/presentation/pages/dispute_resolution_page.dart';
-import 'package:ecocycle/features/home/presentation/pages/home_page.dart';
-import 'package:ecocycle/features/profile/presentation/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
+import 'core/common/navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'EcoCycle',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: HomePage(),
+      home: const MainNavigationContainer(),
     );
   }
 }
